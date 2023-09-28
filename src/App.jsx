@@ -1,4 +1,12 @@
+import Navbar from "./components/layout/navbar/Navbar";
+import FoodListContainer from "./components/pages/home/foodListContainer/foodListContainer";
+
 function App() {
-  return <h1>Hola mundo.</h1>;
+  return (
+    <>
+      <Navbar />
+      <FoodListContainer />
+    </>
+  );
 }
 export default App;
