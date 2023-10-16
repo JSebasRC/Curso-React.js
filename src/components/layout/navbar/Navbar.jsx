@@ -14,6 +14,8 @@ import {
   createTheme,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import "./Navbar.css";
+import CartWidget from "../../common/cartWidget/CartWidget";
 // import { display } from "@mui/system";
 const pages = ["Para comer", "Para Tomar", "Promos"];
 const settings = ["Perfil", "Mi Cuenta", "Pedidos", "Cerrar Sesión"];
@@ -181,6 +183,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+          <CartWidget />
         </Toolbar>
       </Container>
     </AppBar>
