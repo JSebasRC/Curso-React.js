@@ -1,0 +1,9 @@
+.containerCardsProducts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 70%;
+  margin: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
