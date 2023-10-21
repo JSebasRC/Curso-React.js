@@ -1,4 +1,4 @@
-import ProductCard from "../../../common/productCard/productCard";
+import ProductCard from "../../common/productCard/productCard";
 import "./itemList.css"; // Importa el archivo de estilo CSS
 const itemList = ({ items }) => {
   return (

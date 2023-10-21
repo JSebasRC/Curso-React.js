@@ -5,3 +5,6 @@
 .cardList .css-16cvb1l-MuiCardMedia-root {
   height: 300px;
 }
+.cardList .css-1t6e9jv-MuiCardActions-root {
+  padding: 0 1rem 1rem 1rem;
+}
