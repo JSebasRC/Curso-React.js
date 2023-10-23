@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import "./ProductCard.css";
+import { Link } from "react-router-dom";
 const productCard = ({ item }) => {
   return (
     <Card className="cardList">
@@ -26,9 +27,11 @@ const productCard = ({ item }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="outlined">
-          Ver Mas
-        </Button>
+        <Link to="/itemDetail">
+          <Button size="small" variant="outlined">
+            Ver Detalle
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

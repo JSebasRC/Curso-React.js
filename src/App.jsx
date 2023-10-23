@@ -1,22 +1,21 @@
-import Navbar from "./components/layout/navbar/Navbar";
-import FetchingData from "./components/pages/fetchingData/FetchingData";
-import ItemDetailContainer from "./components/pages/itemDetailContainer/ItemDetailContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
-//import CounterContainer from "./components/common/counter/CounterContainer";
+import ItemDetailContainer from "./components/pages/itemDetailContainer/ItemDetailContainer";
+import Navbar from "./components/layout/navbar/Navbar";
+import CartContainer from "./components/pages/cart/CartContainer";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <ItemListContainer />
-      {/* <CounterContainer stock={5} />
-
-      <CounterContainer stock={9} />
-
-      <CounterContainer stock={2} /> */}
-      <FetchingData />
-      <ItemDetailContainer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Navbar />}>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/cart" element={<CartContainer />} />
+          <Route path="/itemDetail" element={<ItemDetailContainer />} />
+        </Route>
+        <Route path="*" element={<h1>Not found</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
