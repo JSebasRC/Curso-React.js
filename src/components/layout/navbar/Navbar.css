@@ -1,0 +1,33 @@
+.toolbar_img img {
+  overflow: "hidden";
+  display: flex;
+  justify-content: "center";
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .toolbar_img img {
+    display: none;
+  }
+  .toolbar_img-mobile img {
+    overflow: "hidden";
+    display: flex;
+    justify-content: "center";
+    width: 150px;
+    height: auto;
+  }
+}
+
+.menuHamburguesa {
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .menuHamburguesa {
+    display: none;
+  }
+  .toolbar_img-mobile img {
+    display: none;
+  }
+}

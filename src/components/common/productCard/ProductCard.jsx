@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
-const productCard = ({ item }) => {
+const ProductCard = ({ item }) => {
   return (
     <Card className="cardList">
       <CardMedia image={item.img} title={`imagen ${item.title}`} />
@@ -27,7 +27,7 @@ const productCard = ({ item }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Link to="/itemDetail">
+        <Link to={`/itemDetail/${item.id}`}>
           <Button size="small" variant="outlined">
             Ver Detalle
           </Button>
@@ -37,4 +37,4 @@ const productCard = ({ item }) => {
   );
 };
 
-export default productCard;
+export default ProductCard;

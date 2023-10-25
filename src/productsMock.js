@@ -38,7 +38,7 @@ export let products = [
     img: "https://res.cloudinary.com/dtfwp778q/image/upload/f_auto,q_auto/spsxexfef3cpzn5mhe1c",
   },
   {
-    id: 4,
+    id: 5,
     title: "Margarita",
     price: "8000",
     stock: 100,
@@ -47,7 +47,7 @@ export let products = [
     img: "https://res.cloudinary.com/dtfwp778q/image/upload/f_auto,q_auto/cepo4lsnoqjjua4ltend",
   },
   {
-    id: 5,
+    id: 6,
     title: "Tequila Jimador",
     price: "8000",
     stock: 10,

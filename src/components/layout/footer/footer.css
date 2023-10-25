@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h4 {
+  color: white;
+}

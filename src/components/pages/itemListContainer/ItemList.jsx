@@ -1,6 +1,7 @@
 import ProductCard from "../../common/productCard/productCard";
 import "./itemList.css"; // Importa el archivo de estilo CSS
-const itemList = ({ items }) => {
+
+const ItemList = ({ items }) => {
   return (
     <section className="containerCardsProducts">
       {items.map((item) => {
@@ -10,4 +11,4 @@ const itemList = ({ items }) => {
   );
 };
 
-export default itemList;
+export default ItemList;
