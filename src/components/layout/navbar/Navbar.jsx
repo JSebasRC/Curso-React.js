@@ -119,7 +119,20 @@ function ResponsiveAppBar() {
             }}
           >
             <Link to={`/`}>
-              <Typography textAlign="center">Todo</Typography>
+              <Button
+                sx={{
+                  my: 2,
+                  ml: 2,
+                  color: "white",
+                  display: "block",
+                  fontWeight: "bold",
+                  textTransform: "capitalize",
+                  fontSize: "1rem",
+                }}
+                textAlign="center"
+              >
+                Todo
+              </Button>
             </Link>
 
             {pages.map((page) => (
@@ -138,7 +151,6 @@ function ResponsiveAppBar() {
               >
                 <Link to={`/category/${page}`}>{page}</Link>
               </Button>
-              // </Link>
             ))}
           </Box>
 
