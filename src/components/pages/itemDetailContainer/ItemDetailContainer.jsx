@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { products } from "../../../productsMock";
 import { ItemDetail } from "./ItemDetail";
-import { useParams, useNavigate, useNavigation } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const ItemDetailContainer = () => {
   const [productSelected, setProductSelected] = useState({});
