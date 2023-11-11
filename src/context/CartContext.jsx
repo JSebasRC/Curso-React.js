@@ -35,7 +35,11 @@ const CartContextComponent = ({ children }) => {
     return product?.quantity;
   };
 
-  let data = { cart, addToCart, getQuantityById };
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  let data = { cart, addToCart, getQuantityById, clearCart };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };
