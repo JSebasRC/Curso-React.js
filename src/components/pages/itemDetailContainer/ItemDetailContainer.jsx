@@ -1,12 +1,20 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { products } from "../../../productsMock";
 import { ItemDetail } from "./ItemDetail";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
 
 const ItemDetailContainer = () => {
   const [productSelected, setProductSelected] = useState({});
 
   const { id } = useParams();
+
+  const { addToCart, getQuantityById } = useContext(CartContext);
+
+  let totalQuantity = getQuantityById(+id);
+  console.log(totalQuantity);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     let producto = products.find((product) => product.id === +id);
@@ -21,14 +29,21 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   const onAdd = (cantidad) => {
-    let obj = {
+    let item = {
       ...productSelected,
       quantity: cantidad,
     };
-    console.log("esto es lo que se agrega: ", obj);
+    addToCart(item);
+    // navigate("/cart");
   };
 
-  return <ItemDetail productSelected={productSelected} onAdd={onAdd} />;
+  return (
+    <ItemDetail
+      productSelected={productSelected}
+      onAdd={onAdd}
+      initial={totalQuantity}
+    />
+  );
 };
 
 export default ItemDetailContainer;
