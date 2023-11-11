@@ -7,7 +7,6 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([]);
 
   const { categoryName } = useParams();
-  console.log(categoryName ? "estoy intentado filtrar" : "estoy en el home");
 
   useEffect(() => {
     const productosFiltrados = products.filter(
