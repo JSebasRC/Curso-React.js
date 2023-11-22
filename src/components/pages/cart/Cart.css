@@ -1,0 +1,16 @@
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: first center;
+  padding: 2rem;
+}
+.cartContainerProduct {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cartContainerProduct img {
+  width: auto;
+  max-height: 200px;
+}
