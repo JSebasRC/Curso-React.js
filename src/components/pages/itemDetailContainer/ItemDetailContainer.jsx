@@ -15,7 +15,6 @@ const ItemDetailContainer = () => {
   const { addToCart, getQuantityById } = useContext(CartContext);
 
   let totalQuantity = getQuantityById(id);
-  console.log(totalQuantity);
 
   const navigate = useNavigate();
 

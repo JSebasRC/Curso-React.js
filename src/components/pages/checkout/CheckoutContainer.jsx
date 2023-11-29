@@ -53,8 +53,6 @@ const CheckoutContainer = () => {
       });
       return;
     }
-
-    console.log("los datos capturados son: ", userInfo);
   };
 
   return (

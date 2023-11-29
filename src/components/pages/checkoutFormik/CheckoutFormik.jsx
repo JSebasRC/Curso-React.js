@@ -41,7 +41,6 @@ const CheckoutFormik = () => {
         .oneOf([Yup.ref("password")], "Las contraseñas no coinciden"),
     }),
   });
-  console.log(errors);
 
   return (
     <div className="containerForm">

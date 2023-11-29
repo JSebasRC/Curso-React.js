@@ -11,7 +11,8 @@
 - Formik
 - Yup
 
-![](/public/vite.svg)
+  ![](/src/assets/react.svg)
+  ![](/public/vite.svg)
 
 Para ejecutar el proyecto sigue las instrucciones
 

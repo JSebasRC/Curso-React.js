@@ -38,7 +38,6 @@ const ItemListContainer = () => {
 
   //   tarea
   //     .then((resolve) => setItems(resolve))
-  //     .catch((error) => console.log(error));
   // }, [categoryName]);
 
   // DATOS USANDO BASE DE FIREBASE
