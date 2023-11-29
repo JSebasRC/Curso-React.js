@@ -9,7 +9,7 @@ const CartWidget = () => {
   return (
     <Link to="/cart">
       <Badge badgeContent={cart.length} showZero color="primary">
-        <ShoppingCartIcon color="secondary" />
+        <ShoppingCartIcon style={{ color: "white" }} />
       </Badge>
     </Link>
   );

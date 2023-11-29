@@ -18,7 +18,12 @@ export const ItemDetail = ({
 
       <div className="itemDetailContainerCol">
         <h2>{productSelected.title}</h2>
-        {initial && <h4>ya tienes {initial} unidades en el carrito</h4>}
+        <h3 style={{ paddingBottom: "12px" }}>{productSelected.description}</h3>
+        {initial && (
+          <h4 style={{ paddingBottom: "12px" }}>
+            ya tienes {initial} unidades en el carrito
+          </h4>
+        )}
 
         {showCounter ? (
           <div>
