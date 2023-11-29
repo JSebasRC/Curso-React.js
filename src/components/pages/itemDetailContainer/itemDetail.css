@@ -1,4 +1,19 @@
-.itemDetail img {
+.itemDetailContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de tamaño igual */
+  gap: 20px; /* Espacio entre las columnas */
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.itemDetailContainerCol {
+  padding: 20px;
+  border-radius: 8px;
+  justify-items: center;
+  align-items: center;
+}
+.itemDetailContainerCol img {
   max-width: 300px;
   height: auto;
 }

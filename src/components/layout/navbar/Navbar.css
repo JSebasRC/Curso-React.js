@@ -19,15 +19,38 @@
   }
 }
 
-.menuHamburguesa {
-  align-items: center;
-}
-
 @media (min-width: 900px) {
-  .menuHamburguesa {
+  .boxMenuHamburguesa {
     display: none;
   }
   .toolbar_img-mobile img {
     display: none;
   }
+}
+.menuHamburguesa a,
+.menuHamburguesa Button {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.css-7e0s21-MuiPaper-root-MuiAppBar-root {
+  background-color: #21130d !important;
+}
+.appBar a,
+.appBar Button {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.appBar a:hover,
+.appBar Button:hover {
+  color: burlywood;
+  font-weight: 700;
+}
+.appBar {
+  background-color: #21130d;
 }

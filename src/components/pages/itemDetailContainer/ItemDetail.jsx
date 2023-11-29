@@ -1,14 +1,45 @@
+import { Link } from "react-router-dom";
 import CounterContainer from "../../common/counter/CounterContainer";
 import "./itemDetail.css";
+import { Button } from "@mui/material";
 
-export const ItemDetail = ({ productSelected, onAdd }) => {
+export const ItemDetail = ({
+  productSelected,
+  onAdd,
+  initial,
+  showCounter,
+}) => {
   return (
-    <div className="itemDetail">
+    <div className="itemDetailContainer">
       {/* cuerpo detalle producto */}
-      <h2>{productSelected.title}</h2>
-      <img src={productSelected.img} alt="" />
-      {/* contador */}
-      <CounterContainer stock={productSelected.stock} onAdd={onAdd} />
+      <div className="itemDetailContainerCol">
+        <img src={productSelected.img} alt="" />
+      </div>
+
+      <div className="itemDetailContainerCol">
+        <h2>{productSelected.title}</h2>
+        <h3 style={{ paddingBottom: "12px" }}>{productSelected.description}</h3>
+        {initial && (
+          <h4 style={{ paddingBottom: "12px" }}>
+            ya tienes {initial} unidades en el carrito
+          </h4>
+        )}
+
+        {showCounter ? (
+          <div>
+            {/* contador */}
+            <CounterContainer
+              stock={productSelected.stock}
+              onAdd={onAdd}
+              initial={initial}
+            />
+          </div>
+        ) : (
+          <Link to={"/cart"}>
+            <Button variant="outlined">Terminar compra</Button>{" "}
+          </Link>
+        )}
+      </div>
     </div>
   );
 };
