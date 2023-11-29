@@ -1,5 +1,5 @@
 import "./itemList.css"; // Importa el archivo de estilo CSS
-import { ProductCard } from "../../common/productCard/ProductCard";
+import { ProductCard } from "../../common/productCard/ProductCard.jsx";
 
 const ItemList = ({ items }) => {
   return (
