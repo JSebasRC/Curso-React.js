@@ -55,7 +55,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="sticky" className="appBar">
       <Container maxWidth="xl">
-        <Toolbar className="toolbar" justifyContent="space-between">
+        <Toolbar className="toolbar">
           {/* imagen header desktop */}
           <Link to="/" className="toolbar_img">
             <img
