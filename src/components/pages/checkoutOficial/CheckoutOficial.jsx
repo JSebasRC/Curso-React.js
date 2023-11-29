@@ -8,7 +8,6 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
-import { Link } from "react-router-dom";
 
 export const CheckoutOficial = () => {
   const [userData, setUserData] = useState({
